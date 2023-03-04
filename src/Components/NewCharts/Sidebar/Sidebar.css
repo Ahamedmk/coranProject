@@ -1,0 +1,94 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+nav a {
+    margin: 10px;
+    font-size: 15px;
+    color: black;
+}
+
+.activeLink {
+    color: red;
+}
+
+nav {
+    
+/* display: flex;
+justify-content: space-around;
+align-items: center; */
+/* border: 1px solid black; */
+  /* position: fixed;  */
+width: 100%;
+color: aliceblue;
+ height: 50px; 
+ /* z-index: 10; */
+margin-bottom: 10px;
+background: rgb(86,69,185);
+background: linear-gradient(126deg, rgba(86,69,185,1) 5%, rgba(117,224,228,0.8551483420593369) 63%);
+}
+
+.burger{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    padding: 5px;
+}
+
+.menuList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+    position: relative;
+    background: rgb(86,69,185);
+background: linear-gradient(126deg, rgba(86,69,185,1) 5%, rgba(117,224,228,0.8551483420593369) 63%);
+    margin: 0px;
+    padding:0px;
+}
+
+.zikr{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    padding: 5px;
+}
+ 
+button {
+    display: none;
+    border: none;
+}
+ 
+@media screen and (max-width: 500px) {
+    .menuList {
+        flex-direction: column;
+        height: 200px;
+    }
+
+     /* nav {
+        height: 200px;
+    }  */
+
+    .items:nth-child(1){
+        border-top: 1px solid #fff;
+        margin-top: 50px;
+}  
+.items {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+button {
+    display: block;
+}
+}

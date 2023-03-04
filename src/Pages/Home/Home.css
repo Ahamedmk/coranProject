@@ -1,0 +1,32 @@
+.home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family:'Prata', serif;
+    font-size: 20px;
+    width: 100%;
+    height:100vh;
+    /* border: 1px solid red; */
+}
+.presentation {
+    max-width: 80%;
+}
+
+.salam {
+    margin-bottom: 2.5rem;
+}
+
+.inscription {
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.souscription {
+    border: 2px solid #28b7f0;
+    border-radius: 5px;
+    padding: 0 3px;
+    background-color: transparent;
+}
