@@ -4,15 +4,16 @@ import { NavLink } from 'react-router-dom';
 import UploadAvatar from './UploadAvatar.js';
 import './Status.css'
 import { ThemeContext } from '../../Context/ThemeContext.js';
+import Confetti from './Confetti.js';
 
 
 
 export default function Status() {
   const {numberPage, tot, setTot} = useContext(ThemeContext)
 
-  
   return (
     <div className='status m-auto px-4 col-12 col-sm-10 col-lg-6'>
+      {(tot>=607) && <Confetti />}
       <h1>Statistique de lecture</h1>
       <div className="human">
         <div className="assidu">
@@ -37,6 +38,7 @@ export default function Status() {
             ((tot<607) && <p className="comment"> Soubhanallah, Allah akbar, Alhamdoulillah!!💕💕 </p> ) } 
       </div>
       {/* <UploadAvatar /> */}
+      {/* <Confetti /> */}
      <Dashboard />
       <div className="suivThird">
           <button className='preThird'>

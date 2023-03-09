@@ -33,9 +33,10 @@ height: 90px;
  bottom: 45px;
  left: 88px;
   border: 2px solid white; 
-background-image: url('../../assets/mk.jpg');
+background-image: url('../../assets/utilisateur.png');
  background-size: cover; 
 background-position: center;
+background-color: rgb(149, 213, 243);
 
 }
 
