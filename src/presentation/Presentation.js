@@ -41,7 +41,7 @@ export default function Presentation() {
 
   //------------------- les versets au début de chaque pages-----------------------------
   //  projet
-  // const total = () => {numberPage.reduce((a,b) => a + b,0);} 
+   //const total = () => {numberPage.reduce((a,b) => a + b,0);} 
    const total = numberPage.reduce((a,b) => a + b,0);
   
   console.log(numberPage)

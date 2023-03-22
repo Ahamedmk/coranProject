@@ -13,13 +13,13 @@ export default function Status() {
 
   return (
     <div className='status m-auto px-4 col-12 col-sm-10 col-lg-6'>
-      {(tot>=607) && <Confetti />}
+      {(tot>=604) && <Confetti />}
       <h1>Statistique de lecture</h1>
       <div className="human">
         <div className="assidu">
           
-           {((tot<120) && <p className="readCoran"> Lecture : ⭐ </p>  )||
-            ((tot<240) && <p className="readCoran"> Lecture : ⭐⭐ </p>  )||
+           {((tot<120) && <p className="readCoran"> Lecture : ⭐ </p>  ) ||
+            ((tot<240) && <p className="readCoran"> Lecture : ⭐⭐ </p>  ) ||
             ((tot<360) && <p className="readCoran"> Lecture : ⭐⭐⭐ </p> ) ||
             ((tot<500) && <p className="readCoran"> Lecture : ⭐⭐⭐⭐ </p> ) ||
             ((tot<607) && <p className="readCoran"> Lecture : ⭐⭐⭐⭐⭐ </p> ) } 

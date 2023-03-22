@@ -11,7 +11,7 @@ const ThemeContextProvider = props => {
     const [numberPage, setNumberPage] = useState ( () => {const sauve = localStorage.getItem ( 'items' );
     const initiale = JSON.parse ( sauve );
      return initiale || "";});
-     
+    //  localStorage.removeItem('items')
      useEffect(() =>{
         localStorage.setItem('items', JSON.stringify(numberPage));
     }, [numberPage]);

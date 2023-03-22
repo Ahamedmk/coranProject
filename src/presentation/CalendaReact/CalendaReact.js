@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 import {addDays, format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import { DateRange, DayPicker } from 'react-day-picker';
@@ -16,6 +16,7 @@ export default function CalendaReact() {
   const [val, setVal] = useState (true);
   
   
+  
   const togglNav = () => {
     setOpen(!open)
   }
@@ -28,8 +29,12 @@ export default function CalendaReact() {
         from: pastMonth,
         to: addDays(pastMonth, 0)
       };
-      const [range, setRange] = useState(defaultSelected);
-
+      const [range, setRange] = useState(defaultSelected)
+      
+       useEffect(() =>{
+         localStorage.setItem('DateJours', JSON.stringify(range));
+     }, [range]);
+      console.log(range)
       const validation = <div className="validation" ><button className="validate" onClick={togglVal}>Valider</button> </div>
     
       let footer = <p>Please pick the first day.</p>;
@@ -55,7 +60,7 @@ export default function CalendaReact() {
     </h1>
 
     <div className="depart">
-   <p className="clic"> Cliquez  pour commencer => </p>
+   <p className="clic"> Cliquez  pour commencer : </p>
    <button onClick={togglNav} className="start">Start</button>
     </div> 
 
